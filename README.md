@@ -98,7 +98,7 @@ Coverage report is available at:
 
 The Jenkins Build Result report includes:
 
-**`Jenkins Report as img.png`** ![file link](https://github.com/taifjalo/OTP1_inclass_assignment/blob/master/Jenkins_Tempreture_V1.png).
+**`Jenkins Report as image`** ![file link](https://github.com/taifjalo/OTP1_inclass_assignment/blob/master/Jenkins_Tempreture_V1.png).
 
 
 The project achieves high overall coverage, indicating that the test suite effectively exercises the implemented logic.
