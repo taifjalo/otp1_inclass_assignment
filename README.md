@@ -1,6 +1,6 @@
 # OTP1 – In-Class Assignment
 
-**Unit Testing and Code Coverage with Maven & JaCoCo**
+**Unit Testing and Code Coverage with Maven & JaCoCo & Jenkins**
 
 ---
 
@@ -37,6 +37,7 @@ The focus of the assignment was correctness, test quality, and measurable covera
 * **Maven**
 * **JUnit**
 * **JaCoCo (Java Code Coverage Library)**
+* **Jenkins**
 
 ---
 
@@ -81,7 +82,7 @@ Tests are executed using JUnit via Maven.
 
 ---
 
-## 7. Code Coverage
+## 7. Code Coverage and Jenkins Build Result
 
 JaCoCo is configured through Maven to:
 
@@ -95,13 +96,9 @@ Coverage report is available at:
 
 [https://users.metropolia.fi/~taifj/Sep1_Imp_2025/site/jacoco/default/index.html](https://users.metropolia.fi/~taifj/Sep1_Imp_2025/site/jacoco/default/index.html)
 
-The report includes:
+The Jenkins Build Result report includes:
 
-* Instruction coverage
-* Branch coverage
-* Line coverage
-* Method coverage
-* Class coverage
+[https://users.metropolia.fi/~taifj/Sep1_Imp_2025/Jenkins_Tempreture_V1.png](https://users.metropolia.fi/~taifj/Sep1_Imp_2025/Jenkins_Tempreture_V1.png)
 
 The project achieves high overall coverage, indicating that the test suite effectively exercises the implemented logic.
 
