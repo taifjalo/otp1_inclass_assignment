@@ -1,4 +1,4 @@
-# OTP1 – CI/CD Assignment
+# OTP1 – DevOps Assignment
 
 **Unit Testing and Code Coverage with Maven & JaCoCo & Jenkins & Docker**
 
