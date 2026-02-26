@@ -5,8 +5,9 @@ WORKDIR /app
 
 COPY pom.xml .
 
-COPY src ./src
+COPY . /app
 
 RUN mvn package
 
 CMD ["java", "-jar", "target/tempcon.jar"]
+
