@@ -4,13 +4,13 @@ pipeline {
     agent any // environment Win, Linux, etc... (ympäristö tunnista)
 
     tools {
-        maven 'Maven3'
+        maven 'Maven 3.9.12'
     }
 
     environment {
           PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
           DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
-          DOCKERHUB_REPO = 'taifjalo1/OTP1_inclass_assignment'
+          DOCKERHUB_REPO = 'taifjalo1/otp1_inclass_assignment'
           DOCKER_IMAGE_TAG = 'v1'
       }
 
