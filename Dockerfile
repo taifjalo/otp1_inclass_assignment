@@ -10,4 +10,3 @@ COPY src ./src
 RUN mvn package
 
 CMD ["java", "-jar", "target/tempcon.jar"]
-
