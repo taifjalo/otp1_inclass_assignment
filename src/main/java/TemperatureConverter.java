@@ -1,5 +1,4 @@
 public class TemperatureConverter {
-
     public double fahrenheitToCelcius(double fahrenheit) {
         double celcius = (fahrenheit - 32) * (5.0 / 9.0);
         return celcius;

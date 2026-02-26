@@ -22,17 +22,35 @@
         </dependency>
     </dependencies>
 
-
     <build>
+        <finalName>tempcon</finalName>
         <plugins>
+
+            <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <release>17</release>
                 </configuration>
             </plugin>
+
+            <!-- Jar executable -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- JaCoCo -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -45,22 +63,14 @@
                     </execution>
                     <execution>
                         <id>report</id>
+                        <phase>verify</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <phase>verify</phase>
                     </execution>
                 </executions>
-                <configuration>
-                    <excludes>
-                        <exclude>sun/util/resources/**</exclude>
-                        <exclude>sun/text/resources/**</exclude>
-                        <exclude>sun/util/cldr/**</exclude>
-                        <exclude>sun/util/resources/provider/LocaleDataProvider</exclude>
-                        <exclude>sun/text/resources/cldr/ext/FormatData_fi</exclude>
-                    </excludes>
-                </configuration>
             </plugin>
+
         </plugins>
     </build>
 
