@@ -1,5 +1,3 @@
-Jenkins_Tempreture_V1.png
-
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

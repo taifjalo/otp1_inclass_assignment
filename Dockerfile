@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY pom.xml .
 
-COPY . /app
+COPY src ./src
 
 RUN mvn package
 
