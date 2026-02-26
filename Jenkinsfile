@@ -4,7 +4,7 @@ pipeline {
     agent any // environment Win, Linux, etc... (ympäristö tunnista)
 
     tools {
-        maven 'Maven 3.9.12'
+        maven 'Maven3'
     }
 
     environment {
