@@ -20,7 +20,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/taifjalo/OTP1_inclass_assignment.git'
+                git 'https://github.com/taifjalo/otp1_inclass_assignment.git'
             }
         }
 
